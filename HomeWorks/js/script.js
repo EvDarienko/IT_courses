@@ -17,11 +17,7 @@ console.log(toSum(array, array.length - 1))
 function calcSum(start, end, step) {
   if (end < start) {
     return 0;
-  } else if (start == end) {
-    return start;
-  } else if (step == 0) {
-    return start;
-  } else if (start > end) {
+  } else if (start == end || step == 0 || start > end) {
     return start;
   } else {
     return start + calcSum(start + step, end, step);
