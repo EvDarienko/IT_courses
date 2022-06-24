@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+}
+
+fieldset {
+    width: 400px;
+    margin: 50px auto 0;
+    padding: 20px;
+}
+
+input, textarea {
+    display: block;
+    margin: 5px 0;
+}
+
+textarea {
+    width: 50%;
+    height: 100px;
+    padding: 5px;
+}
+
+.title-error, .price-error, .unit-error, .reference-error, .description-error {
+    display: none;
+    color: brown;
+    font-size: 12px;
+}

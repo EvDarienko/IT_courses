@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home Works</title>
-	<script src="js/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tank Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/js/script.js" defer></script>
 </head>
 <body>
-	
+    <form action="#">
+        <fieldset>
+            <legend>Validation form</legend>
+            
+            <label for="title">Введите название товара</label>
+            <input id="title" type="text">
+            <p class="title-error">Введите не больше 25 текстовых символов</p>
+
+            <label for="price">Введите цену товара</label>
+            <input id="price" type="text">
+            <p class="price-error">Введите не более двух цифр после запятой</p>
+
+            <label for="unit">Введите единицы измерения (шт, кг, л, ед)</label>
+            <input id="unit" type="text">
+            <p class="unit-error">Введите правильные единицы измерения</p>
+
+            <textarea id="description" placeholder="Введите описание товара"></textarea>
+            <p class="description-error">Введите не больше 150 текстовых символов</p>
+
+            <label for="reference">Введите ссылку на товар</label>
+            <input id="reference" type="text">
+            <p class="reference-error">Введите ссылку с доменом .ua, .com или .net</p>
+
+        </fieldset>
+    </form>
 </body>
 </html>
