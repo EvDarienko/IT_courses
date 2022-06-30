@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slider-container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    font-size: 0px;
+    transition: 1s;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    cursor: pointer;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    opacity: 0.5;
+}
+
+.active {
+    background-color: azure !important;
+}
+
+
+
+
