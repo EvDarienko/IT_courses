@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    background-color: rgb(68, 66, 66);
+    font-size: 0;
+    border: 3px solid rgb(68, 66, 66);
+}
+
+.dino-sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.dino-sidebar > div {
+    padding: 10px;
+    border-right: 2px solid whitesmoke;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.dino-sidebar > div:not(:last-of-type) {
+    border-bottom: 2px solid whitesmoke;
+}
+
+.dino-sidebar > div:hover {
+    background-color: rgb(75, 136, 151);
+}
+
+.dino-sidebar img {
+    width: 90px;
+    height: 70px;
+}
+
+.dino-panel-wrap {
+    width: 700px;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+.dino-panel {
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.dino-body, .dino-eyes, .dino-hats, .dino-mouth, .dino-spots, .dino-mane {
+    position: relative;
+}
+
+.dino-body-sidebar, .dino-eyes-sidebar, .dino-hats-sidebar, .dino-mouth-sidebar, .dino-spots-sidebar, .dino-mane-sidebar {
+    display: none;
+}
+
+.active-sidebar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 101%;
+    background-color: whitesmoke;
+}
+
+.active-sidebar-spots-supplement {
+    top: -276px;
+}
+
+.active-sidebar-mane-supplement {
+    top: -184px;
+}
+
+.active-sidebar div {
+    padding: 10px;
+    border-bottom: 2px solid whitesmoke;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.active-sidebar-mane-supplement > div:last-of-type {
+    border: 0px;
+}
+
+.active-sidebar div:hover {
+    background-color: rgb(118, 206, 228);
+}
+
+.active-sidebar {
+    display: none;
+}
+
+.dino-panel {
+    position: relative;
+    font-size: 16px;
+}
+
+.dino-panel img {
+    display: none;
+    position: absolute;
+}
+
+.dino-panel > img.choosen-eye {
+    display: block;
+    width: 20px;
+    top: 90px;
+    left: 50px;
+    z-index: 10;
+}
+
+.dino-panel > img.choosen-body {
+    display: block;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dino-panel > img.choosen-hat {
+    display: block;
+    width: 100px;
+    height: 50px;
+    top: 39px;
+    left: 28px;
+    transform: rotate(10deg);
+    z-index: 10;
+}
+
+.dino-panel > img.choosen-mouth {
+    display: block;
+    width: 40px;
+    left: 32px;
+    top: 108px;
+    z-index: 10px;
+}
+
+.dino-panel > img.choosen-spot {
+    display: block;
+    width: 80%;
+    top: 102px;
+    left: 89px;
+    z-index: 10;
+}
+
+.dino-panel > img.choosen-mane {
+    display: block;
+    width: 80%;
+    height: 293px;
+    top: 87px;
+    left: 88px;
+}
+
+.dino-panel > img.special-mouth {
+    width: 30px;
+    top: 98px;
+    left: 29px;
+    z-index: 10;
+}
+
+.dino-panel > img.special-hat {
+    top: 48px;
+    left: 18px;
+}
+
+.dino-panel > img.special-spot-1 {
+    width: 72%;
+    top: 140px;
+    left: 105px;
+}
+
+.dino-panel > img.special-spot-2 {
+    width: 79.5%;
+    height: 295px;
+    top: 125px;
+    left: 99px;
+}
+
+.dino-panel > img.special-spot-3 {
+    width: 60%;
+    height: 200px;
+    top: 195px;
+    left: 153px;
+}
+
+.dino-panel > img.special-mane {
+    top: 84px;
+    left: 92px;
+}
